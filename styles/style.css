@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Libre+Barcode+39+Text&family=Mansalva&family=Permanent+Marker&family=Rock+Salt&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-secundario: #EEEEEE;
+    --color-terciario: #d21312;
+    --color-botonactivate: #272727;
+    --color-bordeboton: #9DC08B;    
+    --color-footer: #AF0404;
+    --color-fontfooter: #EEEEEE;
+    
+    --fuente-gior: "Mansalva", serif;
+    --fuente-subti: "Libre Barcode 39 Text", serif;
+    --fuente-parrafos: "Courier Prime", serif;
+    --fuente-mibanda: "Rock Salt", serif;
+    --fuente-marcadorposter: "Permanent Marker", serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 3% 0% 0% 40% ;
+}
+
+.header_menu{
+    display: flex;
+    gap: 81px
+}
+
+.header_menu_link{
+    font-family: var(--fuente-marcadorposter);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;    
+    color: var(--color-terciario);
+}
+
+.header_menu_link:hover{
+    background-color: var(--color-botonactivate);
+    font-size: 27px;
+}
+
+.presentacion{
+    padding: 9px 111px;
+    display: flex;   
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.presentacion_contenido{
+    width: 936px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 36px;
+    font-family: "Mansalva", serif;
+    gap: 44px;
+    text-align: center;
+}
+
+.titulo-destaque{
+    color: var(--color-terciario);
+}
+
+
+.presentacion_contenido_subti{
+    font-size: 30px;
+    font-family: "Libre Barcode 39 Text", serif;
+    gap: 50px;
+    text-align: center;
+    
+}
+
+.presentacion_contenido_texto1{
+    font-size: 24px;
+    font-family: "Permanent Marker", serif;
+    gap: 200px
+}
+
+.presentacion_contenido_texto2{
+    font-size: 22px;
+    font-family: "Courier Prime", serif;
+    text-align: justify;
+}
+
+.presentacion_contenido_texto3{
+    font-size: 20px;
+    font-family: "Rock Salt", serif;
+    text-align: center;
+}
+
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.presentacion_enlaces_subti{
+    font-family: "Courier Prime", serif;
+    font-size: 24px;
+    font-weight: 333;
+}
+
+.presentacion_enlaces_link{
+    width: 270px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 4px 0px;
+    border-radius: 9px;
+    font-family: "Courier Prime", serif;
+    font-size: 16px;
+    font-weight: 111;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 3px solid var(--color-bordeboton);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+
+ }
+
+ .presentacion_enlaces_link img {
+    width: 20px; /* Ajusta el tamaño del ancho de la imagen según tus necesidades */
+    height: 20px; /* Ajusta el tamaño del alto de la imagen según tus necesidades */
+    display: center;
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: var(--color-botonactivate);
+}
+
+.presentacion_contenido_texto_2 {
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Esto centrará los párrafos horizontalmente */
+    font-family: var(--fuente-parrafos);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+  .presentacion_contenido_texto_3 {
+    max-width: 600px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Esto centrará los párrafos horizontalmente */
+    font-family: var(--fuente-mibanda);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+.about-me-image {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+    display: block; /* Esto hará que la imagen se comporte como un elemento de bloque */
+    margin: 0 auto; /* Esto centrará la imagen horizontalmente */
+    margin-top: 2rem; /* Agrega un margen superior para separar la imagen del texto */
+  }
+
+.footer{
+    background-color: var(--color-footer);
+    padding: 6px 6px;
+    color: var(--color-fontfooter);
+    text-align: center;
+    font-family: "Rock Salt", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
