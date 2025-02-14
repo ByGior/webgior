@@ -175,3 +175,24 @@ body {
     font-size: 24px;
     font-weight: 400;
 }
+/* Estilos para pantallas grandes (computadoras) */
+body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* Estilos para celulares */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
